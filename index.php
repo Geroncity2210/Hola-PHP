@@ -1,4 +1,13 @@
+
 <?php
+
+/* Esta primera cagada llamada aplicacion consume la api de un desparchado sarnoso que se 
+la pasa viendo la última mierdipeli de Marvel que va a salir.
+A fecha de hoy (04/07/2025) la próxima peli que va a salir es la de los 4 fantasticos (medio se salva por Pedrito pascal)
+El caso es que se usa cURL para realizar la petición y se muestra con html y toda la vaina
+Este esperpento de app acopla lógica y vista en un solo fichero, por lo que es un mero acercamiento a php,
+si se empeña en usar esta cagada en vida real lo echan a escopetasos de la empresa
+*/
 const API_URL = "https://whenisthenextmcufilm.com/api";
 # Inicializar una nueva sesión de cURL; ch = cURL handle
 $ch = curl_init(API_URL);
